@@ -1,0 +1,8 @@
+[
+    {
+      "environment": "prod",
+      "FORECAST_API_URL": "${0}/data/2.5/forecast?q=${1}&cnt=5&appid=${API_KEY}&units=metric",
+      "IP_INFO_URL" :  "http://ipinfo.io?token=66318570b2cbad"
+    }
+
+  ]
