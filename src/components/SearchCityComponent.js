@@ -62,7 +62,8 @@ class SearchCityComponent extends Component {
     if(reason.request.status === 404)
     {
       this.setState({
-        responseError: `No details on ${city} available` 
+        responseError: `No details on ${city} available` ,
+        responseData : null
       });
     }
 
@@ -142,7 +143,7 @@ class SearchCityComponent extends Component {
         </Row>
         <Row>
           <Col>
-            <Button onClick={this.onSearch}>Check Forecast</Button>
+            <Button onClick={this.onSearch} disabled={!this.state.city} >Check Forecast</Button>
           </Col>
         </Row>
         <Row>
